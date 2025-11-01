@@ -24,18 +24,12 @@ app.include_router(retrieval.router)
 
 @app.get("/")
 async def root():
-    """Root endpoint"""
+    """Root endpoint which does nothing"""
     return {
         "message": "Welcome to Retrieval Demo API",
         "docs": "/docs",
         "health": "/retrieval/health"
     }
-
-
-@app.get("/health")
-async def health():
-    """Global health check"""
-    return {"status": "healthy"}
 
 
 if __name__ == "__main__":
