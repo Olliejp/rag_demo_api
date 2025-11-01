@@ -9,7 +9,10 @@ app = FastAPI()
 # Configure CORS for frontend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://rag-demo-frontend-r20o.onrender.com",
+        "http://localhost:5173"
+        ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
