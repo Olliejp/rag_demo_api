@@ -26,9 +26,7 @@ app.include_router(retrieval.router)
 async def root():
     """Root endpoint which does nothing"""
     return {
-        "message": "Welcome to Retrieval Demo API",
-        "docs": "/docs",
-        "health": "/retrieval/health"
+        "message": "Welcome to Retrieval Demo API"
     }
 
 
